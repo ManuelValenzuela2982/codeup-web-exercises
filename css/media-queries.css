@@ -1,0 +1,9 @@
+div{
+    display: flex;
+}
+
+@media screen and (min-width: 500px){
+    p{
+        color: red;
+    }
+}

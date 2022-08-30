@@ -1,0 +1,6 @@
+/*Starting with mobile resolution*/
+@media screen and (max-width: 600px) {
+}
+.selector-for-some-widget{
+    box-sizing: content-box;
+}
