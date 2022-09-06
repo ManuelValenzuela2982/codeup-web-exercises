@@ -12,6 +12,11 @@
     <p id="content">This is my content</p>
     <p id="sub-content">this is sub content</p>
     <button type="button">Submit</button>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
 
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -21,13 +26,20 @@
 
     $("#my-element").click(function (event){
         header.css("background", "green")
-    })
+    });
 
     var paragraphs = $("#content, #sub-content");
 
     paragraphs.dblclick(function (font){
         paragraphs.css("font-size", "18px")
-    })
+    });
+
+    $("li").hover(function (){
+        $(this).css("color", "red");
+    }, function (){
+        $(this).css("color", "black");
+    });
+
     // var content = $("#content");
     // content.dblclick(function (event){
     //     console.log("event listener event")
